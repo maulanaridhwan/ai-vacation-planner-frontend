@@ -1,0 +1,235 @@
+.resultPanel {
+  background: #ffffff;
+  padding: 1.75rem;
+  border-radius: 8px;
+  color: #0f172a;
+  max-width: 760px;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(16, 24, 40, 0.06);
+  border: 1px solid #e6eef6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.resetButton {
+  background-color: transparent;
+  color: #0f172a;
+  border: 1px solid #e6eef6;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.resetButton:hover {
+  background-color: #f8fafc;
+  border-color: #dbeafe;
+}
+
+.destinationCard {
+  background-color: transparent;
+  padding: 1rem 0;
+  border-radius: 6px;
+  margin-bottom: 1.25rem;
+}
+
+.destinationCard h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #334155;
+}
+
+.destination {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.itinerarySection {
+  margin-bottom: 2rem;
+}
+
+.itinerarySection h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.itineraryList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.itineraryItem {
+  display: flex;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #eef2ff;
+  transition: all 0.12s;
+}
+
+.itineraryItem:hover {
+  background-color: #fafafa;
+  transform: translateY(-1px);
+}
+
+.dayBadge {
+  background-color: #f1f5f9;
+  padding: 0.45rem 0.65rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  min-width: max-content;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  height: fit-content;
+  color: #0f172a;
+}
+
+.itineraryContent h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.itineraryContent p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.activities {
+  margin: 0.75rem 0 0 0;
+  padding-left: 1.5rem;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.activities li {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.bookingSection {
+  margin-bottom: 2rem;
+}
+
+.bookingSection h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.bookingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.bookingCard {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #eef2ff;
+  transition: all 0.12s;
+}
+
+.bookingCard:hover {
+  background-color: #fafafa;
+  transform: translateY(-2px);
+}
+
+.bookingCard h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  opacity: 0.9;
+}
+
+.bookingName {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.bookingPrice {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.bookingDetail {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.costSummary {
+  display: none; /* removed in minimal theme */
+}
+
+@media (max-width: 600px) {
+  .resultPanel {
+    padding: 1.5rem;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .resetButton {
+    width: 100%;
+  }
+
+  .destination {
+    font-size: 1.5rem;
+  }
+
+  .itineraryItem {
+    flex-direction: column;
+  }
+
+  .dayBadge {
+    width: 100%;
+    text-align: center;
+  }
+
+  .bookingGrid {
+    grid-template-columns: 1fr;
+  }
+}
